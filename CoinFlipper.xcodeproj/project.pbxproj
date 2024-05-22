@@ -14,6 +14,13 @@
 		1A557BE12BE6C0D500ABD9EA /* CoinFlipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A557BE02BE6C0D500ABD9EA /* CoinFlipperTests.swift */; };
 		1A557BEB2BE6C0D500ABD9EA /* CoinFlipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A557BEA2BE6C0D500ABD9EA /* CoinFlipperUITests.swift */; };
 		1A557BED2BE6C0D500ABD9EA /* CoinFlipperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A557BEC2BE6C0D500ABD9EA /* CoinFlipperUITestsLaunchTests.swift */; };
+		1A557BFA2BE6C11400ABD9EA /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A557BF92BE6C11400ABD9EA /* AddView.swift */; };
+		1A557BFC2BE6C13100ABD9EA /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A557BFB2BE6C13100ABD9EA /* Currency.swift */; };
+		1A735A952BF9011C00F32A74 /* EditCurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A735A942BF9011C00F32A74 /* EditCurrencyView.swift */; };
+		1A996D5A2BECF4D400DD90C6 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A996D592BECF4D400DD90C6 /* CalendarView.swift */; };
+		1A996D5C2BED0B8700DD90C6 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A996D5B2BED0B8700DD90C6 /* AuthenticationView.swift */; };
+		1A996D5E2BED0FA400DD90C6 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A996D5D2BED0FA400DD90C6 /* UserView.swift */; };
+		1A996D632BED437600DD90C6 /* FlagsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A996D622BED437600DD90C6 /* FlagsKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,12 @@
 		1A557BE62BE6C0D500ABD9EA /* CoinFlipperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinFlipperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A557BEA2BE6C0D500ABD9EA /* CoinFlipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFlipperUITests.swift; sourceTree = "<group>"; };
 		1A557BEC2BE6C0D500ABD9EA /* CoinFlipperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFlipperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1A557BF92BE6C11400ABD9EA /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		1A557BFB2BE6C13100ABD9EA /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		1A735A942BF9011C00F32A74 /* EditCurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCurrencyView.swift; sourceTree = "<group>"; };
+		1A996D592BECF4D400DD90C6 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		1A996D5B2BED0B8700DD90C6 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		1A996D5D2BED0FA400DD90C6 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A996D632BED437600DD90C6 /* FlagsKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +88,11 @@
 		1A557BC32BE6C0D400ABD9EA = {
 			isa = PBXGroup;
 			children = (
+				1ACE540A2BFDDF2100E96912 /* ServerSide */,
+				1ACE54092BFDDEEF00E96912 /* EditViews */,
+				1ACE54082BFDDE8000E96912 /* MainViews */,
+				1ACE54072BFDDE6500E96912 /* Authentication */,
+				1A557BD32BE6C0D500ABD9EA /* Assets.xcassets */,
 				1A557BCE2BE6C0D400ABD9EA /* CoinFlipper */,
 				1A557BDF2BE6C0D500ABD9EA /* CoinFlipperTests */,
 				1A557BE92BE6C0D500ABD9EA /* CoinFlipperUITests */,
@@ -94,9 +113,6 @@
 		1A557BCE2BE6C0D400ABD9EA /* CoinFlipper */ = {
 			isa = PBXGroup;
 			children = (
-				1A557BCF2BE6C0D400ABD9EA /* CoinFlipperApp.swift */,
-				1A557BD12BE6C0D400ABD9EA /* ContentView.swift */,
-				1A557BD32BE6C0D500ABD9EA /* Assets.xcassets */,
 				1A557BD52BE6C0D500ABD9EA /* Preview Content */,
 			);
 			path = CoinFlipper;
@@ -127,6 +143,42 @@
 			path = CoinFlipperUITests;
 			sourceTree = "<group>";
 		};
+		1ACE54072BFDDE6500E96912 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				1A996D5B2BED0B8700DD90C6 /* AuthenticationView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		1ACE54082BFDDE8000E96912 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				1A996D592BECF4D400DD90C6 /* CalendarView.swift */,
+				1A996D5D2BED0FA400DD90C6 /* UserView.swift */,
+				1A557BD12BE6C0D400ABD9EA /* ContentView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		1ACE54092BFDDEEF00E96912 /* EditViews */ = {
+			isa = PBXGroup;
+			children = (
+				1A735A942BF9011C00F32A74 /* EditCurrencyView.swift */,
+				1A557BF92BE6C11400ABD9EA /* AddView.swift */,
+			);
+			path = EditViews;
+			sourceTree = "<group>";
+		};
+		1ACE540A2BFDDF2100E96912 /* ServerSide */ = {
+			isa = PBXGroup;
+			children = (
+				1A557BCF2BE6C0D400ABD9EA /* CoinFlipperApp.swift */,
+				1A557BFB2BE6C13100ABD9EA /* Currency.swift */,
+			);
+			path = ServerSide;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +195,9 @@
 			dependencies = (
 			);
 			name = CoinFlipper;
+			packageProductDependencies = (
+				1A996D622BED437600DD90C6 /* FlagsKit */,
+			);
 			productName = CoinFlipper;
 			productReference = 1A557BCC2BE6C0D400ABD9EA /* CoinFlipper.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +270,9 @@
 				Base,
 			);
 			mainGroup = 1A557BC32BE6C0D400ABD9EA;
+			packageReferences = (
+				1A996D612BED437600DD90C6 /* XCRemoteSwiftPackageReference "FlagsKit" */,
+			);
 			productRefGroup = 1A557BCD2BE6C0D400ABD9EA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +315,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A996D5A2BECF4D400DD90C6 /* CalendarView.swift in Sources */,
+				1A557BFC2BE6C13100ABD9EA /* Currency.swift in Sources */,
+				1A996D5C2BED0B8700DD90C6 /* AuthenticationView.swift in Sources */,
 				1A557BD22BE6C0D400ABD9EA /* ContentView.swift in Sources */,
 				1A557BD02BE6C0D400ABD9EA /* CoinFlipperApp.swift in Sources */,
+				1A735A952BF9011C00F32A74 /* EditCurrencyView.swift in Sources */,
+				1A557BFA2BE6C11400ABD9EA /* AddView.swift in Sources */,
+				1A996D5E2BED0FA400DD90C6 /* UserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +489,7 @@
 				DEVELOPMENT_TEAM = 784399R9DN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We use Face ID to checki if you are an admin";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +519,7 @@
 				DEVELOPMENT_TEAM = 784399R9DN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We use Face ID to checki if you are an admin";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -588,6 +654,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A996D612BED437600DD90C6 /* XCRemoteSwiftPackageReference "FlagsKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pichukov/FlagsKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A996D622BED437600DD90C6 /* FlagsKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A996D612BED437600DD90C6 /* XCRemoteSwiftPackageReference "FlagsKit" */;
+			productName = FlagsKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A557BC42BE6C0D400ABD9EA /* Project object */;
 }
